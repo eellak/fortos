@@ -13,7 +13,7 @@ mysql_connect("localhost", "root", "") or die(mysql_error());
     print $sql;
     $data = mysql_query($sql)
  or die(mysql_error()); 
- $sql= "UPDATE tmp SET completed=0 WHERE taskid =".$id.";";
+ $sql= "UPDATE tmp SET completed=0,kodikos='' WHERE taskid =".$id.";";
     print $sql;
     $data = mysql_query($sql)
  or die(mysql_error()); 

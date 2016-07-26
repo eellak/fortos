@@ -23,7 +23,7 @@ xmlhttp.onreadystatechange=function()
 document.getElementById("unlock").innerHTML="[Ξ]";
 document.getElementById("viewimg").src='edit.png';
 document.getElementById("viewimg").title='ΔΙΟΡΘΩΣΗ ΔΙΑΔΙΚΑΣΙΑΣ';
-document.getElementById("viewaction").href='edittasks?taskid='+taskid;
+document.getElementById("viewaction").href='edittasks.php?taskid='+taskid;
 document.getElementById("unlock").onclick=function() {lock(taskid)};
 }
 if (xmlhttp.responseText.trim()=='Λ')
@@ -56,7 +56,7 @@ xmlhttp.onreadystatechange=function()
 document.getElementById("unlock").innerHTML="[Κ]";
 document.getElementById("viewimg").src='show.png';
 document.getElementById("viewimg").title='ΠΡΟΒΟΛΗ ΔΙΑΔΙΚΑΣΙΑΣ';
-document.getElementById("viewaction").href='showtasks?taskid='+taskid;
+document.getElementById("viewaction").href='showtasks.php?taskid='+taskid;
 document.getElementById("unlock").onclick=function() {unlock(taskid)};
     }
   }
